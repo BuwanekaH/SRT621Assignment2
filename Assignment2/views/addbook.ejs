@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div style="text-align: center; color: darkblue;">
+            <h1>Add New Books</h1>
+        </div>
+        <div class="form" style="text-align: center;">  
+            <form action="create" method="POST">
+                <label for="BookName"> Name of the Book:</label>
+                <br>
+                <input type="text" id="bookname" name="bookname">
+                <br><br>
+                <label for="BookAuthor"> Name of the Author:</label>
+                <br>
+                <input type="text" id="authorname" name="authorname">
+                <br><br>
+                <label for="Booklink"> Link to Amazon:</label>
+                <br>
+                <input type="text" id="link" name="link">
+                <br><br>
+                <input type="submit" value="Submit Book">
+            </form>
+        </div>
+        <div class ="navgt" style="text-align: center;">
+            <ul>
+                <a href="/home">Book list</a> <span>|</span>
+                <a href="/addbook">Add Book</a> <span>|</span>
+                <a href="/delbook">Delete Book</a>
+            </ul>
+        </div>
+
+    </body>
+</html>

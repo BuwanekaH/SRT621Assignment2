@@ -1,0 +1,27 @@
+<!Doctype html>
+<html>
+
+<body>
+    <div id="head" style="text-align: center; color: darkblue;">
+        <h1>To Delete a book, click on the X button</h1>
+    </div>
+    <div id="del_book">
+        {{#each books}}
+        <br>
+        <br>
+        <form action="book/{{bookname}}/delete?_method=DELETE" method="POST">
+            <button type="submit" onclick="return confirm(`Are you sure you want to delete the book?`)">X</button>
+            <span>{{bookname}}</span>
+        </form>{{/each}}
+    </div>
+
+    <div class="navgt" style="text-align: center;">
+        <ul>
+            <a href="/home">Book list</a> <span>|</span>
+            <a href="/addbook">Add Book</a> <span>|</span>
+            <a href="/delbook">Delete Book</a>
+        </ul>
+    </div>
+</body>
+
+</html>
